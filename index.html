@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="canonical" href="https://jamjet.dev" />
+<title>JamJet — the safety layer for AI agents</title>
+<meta name="description" content="JamJet is the action-control plane that sits underneath agent frameworks: policy, approval, audit, durability, and memory. Keep your framework, add JamJet." />
+<style>
+  :root {
+    --ink: #14151a;
+    --muted: #5b6170;
+    --line: #e6e8ee;
+    --accent: #3b3f9e;
+    --accent-soft: #eef0fb;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  .notice {
+    background: var(--accent-soft);
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+    padding: 10px 24px;
+  }
+  header { padding: 64px 0 28px; }
+  .mark { font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.12; margin: 18px 0 14px; letter-spacing: -0.02em; }
+  .lede { font-size: 19px; color: var(--muted); max-width: 40em; margin: 0; }
+  section { padding: 30px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 18px; font-weight: 700; }
+  .pillars { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .pillar { border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+  .pillar h3 { margin: 0 0 6px; font-size: 16px; }
+  .pillar p { margin: 0; font-size: 14px; color: var(--muted); }
+  .links { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    display: block; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px;
+    transition: border-color .15s ease, background .15s ease;
+  }
+  .card:hover { border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+  .card .k { font-weight: 650; color: var(--ink); font-size: 15px; }
+  .card .v { font-size: 13px; color: var(--muted); margin-top: 3px; word-break: break-word; }
+  .cta { display: inline-block; background: var(--accent); color: #fff; padding: 11px 20px; border-radius: 10px; font-weight: 600; font-size: 15px; }
+  .cta:hover { text-decoration: none; opacity: .92; }
+  footer { padding: 36px 0 64px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+  code { background: #f4f5f8; padding: 1px 6px; border-radius: 5px; font-size: 90%; }
+</style>
+</head>
+<body>
+  <div class="notice">
+    Can't reach <strong>jamjet.dev</strong> on your corporate network? This is the same project, reachable here. Everything you need is below.
+  </div>
+
+  <div class="wrap">
+    <header>
+      <div class="mark">JamJet</div>
+      <h1>The safety layer that sits under your AI agents.</h1>
+      <p class="lede">
+        Keep LangGraph, CrewAI, Spring AI, or Claude Code. Add JamJet for policy,
+        approval, audit, durability, and memory. Agent failures are infrastructure
+        failures, not model failures, and that is the layer JamJet owns.
+      </p>
+    </header>
+
+    <section>
+      <h2>Three pillars</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>OSS Runtime</h3>
+          <p>Open-source engine in Rust, Python, and Java. Block unsafe tool calls, require approval, enforce budgets, audit, and replay.</p>
+        </div>
+        <div class="pillar">
+          <h3>JamJet Cloud</h3>
+          <p>Hosted control plane: observe agent runs, enforce governance, and prove what happened with a durable audit trail.</p>
+        </div>
+        <div class="pillar">
+          <h3>Engram</h3>
+          <p>Agent memory. A temporal knowledge graph that gives agents durable, queryable long-term context.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get it / read it</h2>
+      <div class="links">
+        <a class="card" href="https://github.com/jamjet-labs">
+          <div class="k">GitHub — jamjet-labs</div>
+          <div class="v">github.com/jamjet-labs · source, quickstarts, examples</div>
+        </a>
+        <a class="card" href="https://docs.jamjet.dev">
+          <div class="k">Documentation</div>
+          <div class="v">docs.jamjet.dev</div>
+        </a>
+        <a class="card" href="https://pypi.org/project/jamjet/">
+          <div class="k">Python — PyPI</div>
+          <div class="v">pip install jamjet</div>
+        </a>
+        <a class="card" href="https://www.npmjs.com/package/@jamjet/cloud">
+          <div class="k">TypeScript — npm</div>
+          <div class="v">npm i @jamjet/cloud</div>
+        </a>
+        <a class="card" href="https://central.sonatype.com/namespace/dev.jamjet">
+          <div class="k">Java — Maven Central</div>
+          <div class="v">dev.jamjet</div>
+        </a>
+        <a class="card" href="https://crates.io/crates/jamjet-core">
+          <div class="k">Rust — crates.io</div>
+          <div class="v">crates.io/crates/jamjet-core</div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Talk to us</h2>
+      <p style="margin:0 0 16px; color:var(--muted); max-width:40em;">
+        The fastest reachable channel from a locked-down network is GitHub. Open a
+        discussion or issue and the team will follow up.
+      </p>
+      <a class="cta" href="https://github.com/jamjet-labs/jamjet/discussions">Start a discussion on GitHub</a>
+    </section>
+
+    <footer>
+      <p>
+        Canonical home: <a href="https://jamjet.dev">jamjet.dev</a>. This page is an
+        access mirror for networks that block new domains; it is intentionally not
+        indexed by search engines.
+      </p>
+    </footer>
+  </div>
+<!--
+  TODO (Sunil): if you want a direct email contact on this page, add a
+  mailto here (e.g. a JamJet inbox). Left off deliberately to avoid
+  publishing a personal address.
+-->
+</body>
+</html>
